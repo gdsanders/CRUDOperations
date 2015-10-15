@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let moc = NSManagedObjectContext(concurrencyType: .MainQueueConcurrencyType)
+        moc.persistentStoreCoordinator = CDHelper.sharedInstance.coordinator
+        createPeople(moc)
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,6 +33,12 @@ class ViewController: UIViewController {
                 as? Person else
             {continue}
             person.name = n
+        }
+        do {
+            print("Save attempt here")
+            try moc.save()
+        } catch {
+            print("Error saving!")
         }
     }
 

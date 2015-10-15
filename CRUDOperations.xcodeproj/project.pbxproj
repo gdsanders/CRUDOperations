@@ -14,6 +14,8 @@
 		632E99041BD04B2B007BCE45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632E99021BD04B2B007BCE45 /* LaunchScreen.storyboard */; };
 		632E990C1BD04BC1007BCE45 /* CDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632E990B1BD04BC1007BCE45 /* CDHelper.swift */; settings = {ASSET_TAGS = (); }; };
 		632E990F1BD04CBD007BCE45 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 632E990D1BD04CBD007BCE45 /* Model.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		632E99121BD04D45007BCE45 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632E99101BD04D45007BCE45 /* Person+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		632E99131BD04D45007BCE45 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632E99111BD04D45007BCE45 /* Person.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		632E99051BD04B2B007BCE45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		632E990B1BD04BC1007BCE45 /* CDHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDHelper.swift; sourceTree = "<group>"; };
 		632E990E1BD04CBD007BCE45 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		632E99101BD04D45007BCE45 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		632E99111BD04D45007BCE45 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,8 @@
 		632E98ED1BD04B2B007BCE45 = {
 			isa = PBXGroup;
 			children = (
+				632E99101BD04D45007BCE45 /* Person+CoreDataProperties.swift */,
+				632E99111BD04D45007BCE45 /* Person.swift */,
 				632E98F81BD04B2B007BCE45 /* CRUDOperations */,
 				632E98F71BD04B2B007BCE45 /* Products */,
 			);
@@ -141,7 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				632E99131BD04D45007BCE45 /* Person.swift in Sources */,
 				632E98FC1BD04B2B007BCE45 /* ViewController.swift in Sources */,
+				632E99121BD04D45007BCE45 /* Person+CoreDataProperties.swift in Sources */,
 				632E98FA1BD04B2B007BCE45 /* AppDelegate.swift in Sources */,
 				632E990C1BD04BC1007BCE45 /* CDHelper.swift in Sources */,
 				632E990F1BD04CBD007BCE45 /* Model.xcdatamodeld in Sources */,

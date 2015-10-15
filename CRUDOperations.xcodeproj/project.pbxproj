@@ -12,6 +12,7 @@
 		632E98FF1BD04B2B007BCE45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632E98FD1BD04B2B007BCE45 /* Main.storyboard */; };
 		632E99011BD04B2B007BCE45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632E99001BD04B2B007BCE45 /* Assets.xcassets */; };
 		632E99041BD04B2B007BCE45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632E99021BD04B2B007BCE45 /* LaunchScreen.storyboard */; };
+		632E990C1BD04BC1007BCE45 /* CDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632E990B1BD04BC1007BCE45 /* CDHelper.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		632E99001BD04B2B007BCE45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		632E99031BD04B2B007BCE45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		632E99051BD04B2B007BCE45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		632E990B1BD04BC1007BCE45 /* CDHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				632E98F91BD04B2B007BCE45 /* AppDelegate.swift */,
 				632E98FB1BD04B2B007BCE45 /* ViewController.swift */,
+				632E990B1BD04BC1007BCE45 /* CDHelper.swift */,
 				632E98FD1BD04B2B007BCE45 /* Main.storyboard */,
 				632E99001BD04B2B007BCE45 /* Assets.xcassets */,
 				632E99021BD04B2B007BCE45 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				632E98FC1BD04B2B007BCE45 /* ViewController.swift in Sources */,
 				632E98FA1BD04B2B007BCE45 /* AppDelegate.swift in Sources */,
+				632E990C1BD04BC1007BCE45 /* CDHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,7 @@
 		632E99011BD04B2B007BCE45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632E99001BD04B2B007BCE45 /* Assets.xcassets */; };
 		632E99041BD04B2B007BCE45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632E99021BD04B2B007BCE45 /* LaunchScreen.storyboard */; };
 		632E990C1BD04BC1007BCE45 /* CDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632E990B1BD04BC1007BCE45 /* CDHelper.swift */; settings = {ASSET_TAGS = (); }; };
+		632E990F1BD04CBD007BCE45 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 632E990D1BD04CBD007BCE45 /* Model.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		632E99031BD04B2B007BCE45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		632E99051BD04B2B007BCE45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		632E990B1BD04BC1007BCE45 /* CDHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDHelper.swift; sourceTree = "<group>"; };
+		632E990E1BD04CBD007BCE45 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				632E98FD1BD04B2B007BCE45 /* Main.storyboard */,
 				632E99001BD04B2B007BCE45 /* Assets.xcassets */,
 				632E99021BD04B2B007BCE45 /* LaunchScreen.storyboard */,
+				632E990D1BD04CBD007BCE45 /* Model.xcdatamodeld */,
 				632E99051BD04B2B007BCE45 /* Info.plist */,
 			);
 			path = CRUDOperations;
@@ -141,6 +144,7 @@
 				632E98FC1BD04B2B007BCE45 /* ViewController.swift in Sources */,
 				632E98FA1BD04B2B007BCE45 /* AppDelegate.swift in Sources */,
 				632E990C1BD04BC1007BCE45 /* CDHelper.swift in Sources */,
+				632E990F1BD04CBD007BCE45 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +296,20 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		632E990D1BD04CBD007BCE45 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				632E990E1BD04CBD007BCE45 /* Model.xcdatamodel */,
+			);
+			currentVersion = 632E990E1BD04CBD007BCE45 /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = ../Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 632E98EE1BD04B2B007BCE45 /* Project object */;
 }

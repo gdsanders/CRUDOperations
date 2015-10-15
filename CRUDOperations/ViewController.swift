@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
 
@@ -19,6 +20,19 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    func createPeople(moc: NSManagedObjectContext) {
+        let names = ["Bob", "Anthony", "Evan", "Rickey"]
+        
+        for n in names {
+            guard let person = NSEntityDescription.insertNewObjectForEntityForName("Person", inManagedObjectContext: moc)
+                as? Person else
+            {continue}
+            person.name = n
+        }
+    }
+
 
 
 }

@@ -16,7 +16,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         let moc = NSManagedObjectContext(concurrencyType: .MainQueueConcurrencyType)
         moc.persistentStoreCoordinator = CDHelper.sharedInstance.coordinator
-        createPeople(moc)
+        // createPeople(moc)
+        
+        fetchPeople(moc)
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,7 +26,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+    // Create people object
     func createPeople(moc: NSManagedObjectContext) {
         let names = ["Bob", "Anthony", "Evan", "Rickey"]
         
@@ -40,6 +42,28 @@ class ViewController: UIViewController {
         } catch {
             print("Error saving!")
         }
+    }
+    
+    // Fetch the records and return as an array
+    
+    func fetchPeople (moc: NSManagedObjectContext) -> [Person]? {
+        let request = NSFetchRequest(entityName: "Person")
+        
+        do {
+            guard let people = try
+            moc.executeFetchRequest(request) as? [Person] else
+            {return nil}
+            
+            for p in people {
+                print(p.name)
+                print(p.age)
+            }
+            return people
+        }
+        catch {
+            print("We couldn't fetch a record!")
+        }
+        return nil
     }
 
 

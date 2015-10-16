@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         let moc = NSManagedObjectContext(concurrencyType: .MainQueueConcurrencyType)
         moc.persistentStoreCoordinator = CDHelper.sharedInstance.coordinator
         // createPeople(moc)
+        updatePeople(moc)
         
         fetchPeople(moc)
     }
@@ -66,6 +67,19 @@ class ViewController: UIViewController {
         return nil
     }
 
+    
+    func updatePeople (moc: NSManagedObjectContext) {
+        guard let people = fetchPeople(moc) else {return}
+        
+        for p in people {
+            p.age = 27
+        }
+        do {
+            try moc.save()
+        } catch {
+            print("Error saving")
+        }
+    }
 
 
 }
